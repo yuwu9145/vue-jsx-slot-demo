@@ -23,8 +23,9 @@ npm run build
 3. Inspect console log
 
 ## Result
-Both "Test Updated!" & "Wrapper Updated!" are printed out
-If go to src/App.tsx and comment out line 15, only "Wrapper Updated!" is printed
+Both App and Test components re-rendered, as "Test Updated!" & "App Updated!" are printed out.
+
+However, if go to src/App.tsx and comment out line 20, only App component is updated (only "Wrapper Updated!" is printed), which is expected.
 
 ## Expect result
 "Test Updated!" should never be printed in console log in either case
